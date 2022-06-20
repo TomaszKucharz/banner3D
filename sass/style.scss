@@ -1,13 +1,38 @@
 @import "_variables";
 .banner {
-  margin: 0 auto;
+  margin: 80px auto;
   width: 50vw;
-  background-color: $background_banners;
-  animation: anime 3s infinite;
+  // background-color: $background_banners;
   .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100px;
+    // text-align: center;
+    animation: anime 3s infinite;
+    // animation-delay: 0.1s;
+    // animation-duration: 10s;
     border: 1px solid red;
-    text-align: center;
+  }
+  .layer1 {
+    position: relative;
+    top: 102px;
+    width: 30vw;
+    transform-origin: 100% 100%;
+    transform: rotateX(150deg);
+    background-color: aqua;
+  }
+  .layer2 {
+    // display: none;
+    position: relative;
+    width: 30vw;
+    background-color: #f5deb38d;
+  }
+  .layer3 {
+    display: none;
+    position: absolute;
+    width: 30vw;
+    background-color: green;
   }
 
   @keyframes anime {
@@ -19,4 +44,3 @@
     }
   }
 }
-/**tekts na git 
