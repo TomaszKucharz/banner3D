@@ -1,46 +1,36 @@
 @import "_variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font_banner;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 30%;
+  margin: 10vh auto;
+  border: 1px dotted red;
+}
 .banner {
-  margin: 80px auto;
-  width: 50vw;
-  // background-color: $background_banners;
-  .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    // text-align: center;
-    animation: anime 3s infinite;
-    // animation-delay: 0.1s;
-    // animation-duration: 10s;
-    border: 1px solid red;
-  }
-  .layer1 {
-    position: relative;
-    top: 102px;
-    width: 30vw;
-    transform-origin: 100% 100%;
-    transform: rotateX(150deg);
-    background-color: aqua;
-  }
-  .layer2 {
-    // display: none;
-    position: relative;
-    width: 30vw;
-    background-color: #f5deb38d;
-  }
-  .layer3 {
-    display: none;
-    position: absolute;
-    width: 30vw;
-    background-color: green;
-  }
-
-  @keyframes anime {
-    0% {
-      transform: rotateX(0deg);
-    }
-    100% {
-      transform: rotateX(359deg);
-    }
-  }
+  width: 90%;
+  height: 80%;
+  border: 0.1px solid yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5vh;
+}
+.banner .parts {
+  padding: 10px;
+  border: 1px solid rosybrown;
 }
