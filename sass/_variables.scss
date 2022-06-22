@@ -1,5 +1,8 @@
 $background_banners: #ffff0043;
-$background_body: #ffff0043;
-$background_main: #000000;
+$background_body: #000000;
+$background_main: #00000000;
+$background_parts: #000000d7;
 $font_banner: roboto;
-$border_banner: 0.1px solid yellow;
+$border_banner: 0.1px solid rgba(255, 255, 0, 0);
+$border_main: 0.1px dotted #ff000000;
+$border_parts: 0.1px solid #8e7474;

@@ -8,7 +8,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: #000;
+  background: $background_body;
 }
 .main {
   display: flex;
@@ -16,21 +16,46 @@ body {
   align-items: center;
   width: 80%;
   height: 30%;
+  background-color: $background_main;
   margin: 10vh auto;
-  border: 1px dotted red;
+  border: $border_main;
+  transform-style: preserve-3d;
 }
 .banner {
+  position: relative;
+  top: 0;
+  left: 0;
   width: 90%;
   height: 80%;
-  border: 0.1px solid yellow;
+  border: $border_banner;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   font-size: 5vh;
+  transform-style: preserve-3d;
+  animation: animate 15s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotateY(-20deg) rotateX(359deg);
+  }
+  100% {
+    transform: rotateY(-20deg) rotateX(0deg);
+  }
 }
 .banner .parts {
+  position: absolute;
+  // top: 0;
+  // left: 0;
+  width: 80%;
+  height: 60%;
   padding: 10px;
-  border: 1px solid rosybrown;
+  border: $border_parts;
+  background: $background_parts;
+  display: flex;
+  transform: rotateX(calc(120deg * var(--a))) translateZ(4vh);
+  justify-content: center;
+  align-items: center;
 }
