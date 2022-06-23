@@ -1,61 +1,61 @@
-@import "_variables";
+@import '_variables';
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: $font_banner;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $font_banner;
 }
 body {
-  width: 100vw;
-  height: 100vh;
-  background: $background_body;
+	width: 100vw;
+	height: 100vh;
+	background: $background_body;
 }
 .main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 30%;
-  background-color: $background_main;
-  margin: 10vh auto;
-  border: $border_main;
-  transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	height: 30%;
+	background-color: $background_main;
+	margin: 10vh auto;
+	border: $border_main;
+	transform-style: preserve-3d;
 }
 .banner {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 90%;
-  height: 80%;
-  border: $border_banner;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 5vh;
-  transform-style: preserve-3d;
-  animation: animate 15s linear infinite;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 90%;
+	height: 80%;
+	border: $border_banner;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 5vh;
+	transform-style: preserve-3d;
+	animation: animate 15s linear infinite;
 }
 @keyframes animate {
-  0% {
-    transform: rotateY(-20deg) rotateX(359deg);
-  }
-  100% {
-    transform: rotateY(-20deg) rotateX(0deg);
-  }
+	0% {
+		transform: rotateY(0deg) rotateX(359deg);
+	}
+	100% {
+		transform: rotateY(0deg) rotateX(0deg);
+	}
 }
 .banner .parts {
-  position: absolute;
-  // top: 0;
-  // left: 0;
-  width: 80%;
-  height: 60%;
-  padding: 10px;
-  border: $border_parts;
-  background: $background_parts;
-  display: flex;
-  transform: rotateX(calc(120deg * var(--a))) translateZ(4vh);
-  justify-content: center;
-  align-items: center;
+	position: absolute;
+	// top: 0;
+	// left: 0;
+	width: 80%;
+	height: 60%;
+	padding: 10px;
+	border: $border_parts;
+	background: $background_parts;
+	display: flex;
+	transform: rotateX(calc(120deg * var(--a))) translateZ(4vh);
+	justify-content: center;
+	align-items: center;
 }
